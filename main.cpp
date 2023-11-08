@@ -16,5 +16,5 @@ string Parser(string& source, const char DELIMITER) {
     auto result = source.substr(0, position);
     source = source.substr(position + 1);
 
-    return result;git 
+    return result;
 }
