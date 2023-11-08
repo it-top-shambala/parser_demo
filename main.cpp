@@ -3,12 +3,12 @@
 
 #include "parser_library.h"
 
+#include "cli_functions.h"
+
 using namespace std;
 
 int main() {
-    string input;
-    cout << "Enter text (<name>|<date of birth>|<phone>): ";
-    getline(cin, input);
+    string input = InputString("Enter text (<name>|<date of birth>|<phone>): ");
 
     const char DELIMITER_TOTAL = '|';
     const char DELIMITER_DATE = '.';
